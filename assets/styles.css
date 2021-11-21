@@ -1,0 +1,326 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/baggrund.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--white);
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --white: #f4f4f4;
+    --red: #C32323;
+    --darkred: #6F1314 ;
+}
+
+/* ------------- NAVIGATION AND LOGO -------------- */
+
+
+nav {
+    justify-content: space-between;
+    display: inline-block;
+    padding: 5px;
+    font-size: 28px;
+    width: 100%;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin: 20px 0 20px 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    margin: 0 30px 0 100px;
+}
+
+nav li a:hover {
+    color: var(--darkred);
+}
+
+nav li a:active {
+    color: var(--darkred);
+}
+
+.active {
+    border-bottom: solid 2px;
+}
+
+
+/* ------------- REPEATING STYLES -------------- */
+
+
+.italic {
+    font-style: italic;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--red);
+}
+
+.link:hover {
+    color: var(--darkred);
+}
+
+.bebasNeue {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.redHeader {
+    margin: 0;
+    padding: 0;
+    color: var(--red);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/* ------------- HOME -------------- */
+
+.frontpageImg {
+    width: 350px;
+    display: inline-block;
+    float: left;
+}
+
+.containerIndex {
+    margin: 0;
+    padding-right: 0;
+    font-size: 22px;
+    width: 400px;
+}
+
+.headerHome {
+    margin: 0;
+    padding-top: 15px;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.frontpageImg {grid-area: frontpageImg;}
+.headerHome {grid-area: headerHome;}
+.containerIndex {grid-area: containerIndex;}
+
+.frontGrid {
+    margin: 80px 0 0 80px;
+    padding: 0;
+    display: grid;
+    position: relative;
+    min-height: 68vh;
+    grid-template-columns: 1fr 420px 500px 1fr;
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: 
+    ". frontpageImg headerHome ."
+    ". frontpageImg containerIndex .";
+}
+
+
+
+
+/* ------------- WHO AM I? -------------- */
+
+.whoAmIHeader {
+    margin: 60px 120px;
+    padding: 0;
+    font-size: 50px;
+    color: var(--red);
+}
+
+.aboutMeTxt {
+    margin: 50px 0 0 120px;
+    padding: 0;
+    width: 500px;
+    line-height: 150%;
+}
+
+.aboutMeTxt p {
+    margin: 10px 0;
+}
+
+.me {
+    margin: 65px 120px 0 0;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.me2 {
+    margin: 10px 120px 0 0;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.userAnalysis {
+    margin: 0 0 0 120px;
+    padding: 0;
+}
+
+.userAnalysis img {
+    margin: 0 0 0 45px;
+    padding: 0;
+    width: 36%;
+}
+
+.userAnalysis h3 {
+    margin: 10px 0 0 35px;
+}
+
+.userAnalysis p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 220px;
+}
+
+.projectManagement {
+    margin: 0 0 0 28%;
+    padding: 0;
+}
+
+.projectManagement img {
+    margin: 0 0 0 45px;
+    padding: 0;
+    width: 31%;
+}
+
+.projectManagement h3 {
+    margin: 10px 0 0 10px;
+}
+
+.projectManagement p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 220px;
+}
+
+.UXUIDesign {
+    margin: 0 0 0 10%;
+    padding: 0;
+}
+
+.UXUIDesign img {
+    margin: 0 0 0 45px;
+    padding: 0;
+    width: 28%;
+}
+
+.UXUIDesign h3 {
+    margin: 10px 0 0 35px;
+}
+
+.UXUIDesign p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 220px;
+}
+
+.sendEmail {
+    margin: auto;
+    padding: 0;
+}
+
+.sendEmail p {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.emailButton {
+    margin-left: 50px;
+    padding: 15px 30px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    border: black solid 3px;
+    background-color: var(--red);
+    box-shadow: 2px 4px 6px #000000;
+    width: 140px;
+    height: 50px;
+}
+
+.emailButton:hover {
+    background-color: var(--darkred);
+}
+
+.whoAmIHeader {grid-area: whoAmIHeader;}
+.aboutMeTxt {grid-area: aboutMeTxt;}
+.me {grid-area: me;}
+.me2 {grid-area: me2;}
+.userAnalysis {grid-area: userAnalysis;}
+.projectManagement {grid-area: projectManagement;}
+.UXUIDesign {grid-area: UXUIDesign;}
+.sendEmail {grid-area: sendEmail;}
+
+
+.whoAmIGrid {
+    padding: 20px 0 100px 0;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 80px 420px 420px 400px;
+    grid-template-areas: 
+    "whoAmIHeader whoAmIHeader ."
+    "aboutMeTxt aboutMeTxt me"
+    "aboutMeTxt aboutMeTxt me2"
+    "userAnalysis projectManagement UXUIDesign"
+    ". sendEmail .";
+}
+
+
+
+/* ------------- CASES -------------- */
+
+
+
+/* ------------- JUL I ZOO -------------- */
+
+
+
+/* ------------- SVALEGAARDEN MEST -------------- */
+
+
+
+/* ------------- ENGLEROD -------------- */
+
+
+
+/* ------------- NORDSJAELLANDS KATTEHJAELP -------------- */
+
+
+
+/* ------------- FOOTER -------------- */
+
+footer {
+    margin: 15px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+}
+
+h5 {
+    margin: 20px 0 0 20px;
+    padding: 0;
+    color: var(--white);
+    font-weight: normal;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.social {
+    width: 30px;
+    height: auto;
+    padding: 15px 40px 0 0;
+    float: right;
+}
