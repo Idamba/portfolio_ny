@@ -136,6 +136,7 @@ nav li a:active {
     margin: 60px 120px;
     padding: 0;
     font-size: 50px;
+    font-weight: normal;
     color: var(--red);
 }
 
@@ -276,10 +277,153 @@ nav li a:active {
 }
 
 
-
 /* ------------- CASES -------------- */
 
+.headerCases {
+    width: 100px;
+    margin: 0 0 0 120px;
+    padding: 0 0 15px 0;
+    font-size: 50px;
+    font-weight: normal;
+    color: var(--red);
+}
 
+.pCases {
+    margin-left: 120px;
+    width: 500px;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+.NKCase {
+    margin: 0 0 0 120px;
+    padding: 0;
+}
+
+.NKCaseImg {
+    width: 80%;    
+    border-radius: 5px;
+}
+
+.NKCaseImg:hover {
+    opacity: 50%;
+}
+
+.NKCase h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: normal;
+    width: 90%;
+}
+
+.NKCase p {
+    margin: 5px 0;
+    width: 50%;
+    font-style: italic;
+}
+
+.englerodCase {
+    margin: 0 120px 0 0; 
+    padding: 0;
+}
+
+.englerodCaseImg {
+    width: 80%;    
+    border-radius: 5px;
+}
+
+.englerodCaseImg:hover {
+    opacity: 50%;
+}
+
+.englerodCase h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: normal;
+    width: 50%;
+}
+
+.englerodCase p {
+    margin: 5px 0;
+    width: 50%;
+    font-style: italic;
+}
+
+.svalegaardenMestCase {
+    margin: 0 0 0 120px;    
+    padding: 0;
+}
+
+.svalegaardenMestCaseImg {
+    width: 80%;    
+    border-radius: 5px;
+}
+
+.svalegaardenMestCaseImg:hover {
+    opacity: 50%;
+}
+
+.svalegaardenMestCase h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: normal;
+    width: 50%;
+}
+
+.svalegaardenMestCase p {
+    margin: 5px 0;
+    width: 50%;
+    font-style: italic;
+}
+
+.julIZooCase {
+    margin: 0 120px 0 0;     
+    padding: 0;
+}
+
+.julIZooCaseImg {
+    width: 80%;    
+    border-radius: 5px;
+}
+
+.julIZooCaseImg:hover {
+    opacity: 50%;
+}
+
+.julIZooCase h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: normal;
+    width: 50%;
+}
+
+.julIZooCase p {
+    margin: 5px 0;
+    width: 50%;
+    font-style: italic;
+}
+
+.introCases {grid-area: introCases;}
+.NKCase {grid-area: NKCase;}
+.englerodCase {grid-area: englerodCase;}
+.svalegaardenMestCase {grid-area: svalegaardenMestCase;}
+.julIZooCase {grid-area: julIZooCase;}
+
+
+.casesGrid {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns:1fr 550px 550px 1fr;
+    grid-template-rows: 260px 300px 280px;
+    grid-template-areas: 
+    ". introCases introCases ."
+    ". NKCase englerodCase ."
+    ". svalegaardenMestCase julIZooCase .";
+}
 
 /* ------------- JUL I ZOO -------------- */
 
