@@ -13,7 +13,7 @@ html {
 :root {
     --white: #f4f4f4;
     --red: #C32323;
-    --darkred: #6F1314 ;
+    --darkred: #6F1314;
 }
 
 /* ------------- NAVIGATION AND LOGO -------------- */
@@ -86,6 +86,16 @@ nav li a:active {
     color: var(--red);
     font-size: 20px;
     font-weight: normal;
+}
+
+.header {
+    margin: 0;
+    padding: 0 0 15px 0;   
+    font-size: 50px;
+    color: var(--red);
+    text-decoration: none;
+    font-weight: normal;
+    width: 500px;
 }
 
 
@@ -279,13 +289,8 @@ nav li a:active {
 
 /* ------------- CASES -------------- */
 
-.headerCases {
-    width: 100px;
+.casesHeader {
     margin: 0 0 0 120px;
-    padding: 0 0 15px 0;
-    font-size: 50px;
-    font-weight: normal;
-    color: var(--red);
 }
 
 .pCases {
@@ -427,6 +432,68 @@ nav li a:active {
 
 /* ------------- JUL I ZOO -------------- */
 
+.arrowBack {
+    margin: 0 0 0 75%;
+    padding: 0;
+    text-decoration: none;
+    color: var(--white);
+    width: 70px;
+    font-style: italic;
+}
+
+.arrowBack img {
+    width: 50px;
+}
+
+.arrowBack p {
+    margin: 0 5px;
+}
+
+.arrowBack:hover {
+    opacity: 50%;
+}
+
+.introJulIZoo {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+
+.tabs {
+    margin: 0;
+    padding: 0 30px;
+    font-size: 20px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px var(--darkred);
+    border-radius: 10px;
+    height: 60px;
+    width: 100%;
+}
+
+.tabActive {
+    color: var(--darkred);
+}
+
+.tabHover:hover {
+    color: var(--darkred);
+}
+
+.arrowBack {grid-area: arrowBack;}
+.introJulIZoo {grid-area: introJulIZoo;}
+.tabs {grid-area: tabs;}
+
+
+.julIZooGrid {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns:1fr 700px 1fr;
+    grid-template-rows: 260px 300px;
+    grid-template-areas: 
+    "arrowBack introJulIZoo ."
+    ". tabs .";
+}
 
 
 /* ------------- SVALEGAARDEN MEST -------------- */
