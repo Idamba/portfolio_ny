@@ -145,6 +145,33 @@ nav li a:active {
     color: var(--darkred);
 }
 
+.tab1 {
+    width: 800px;
+}
+
+.tab2 {
+    width: 800px;
+    display: none;
+}
+
+.tab3 {
+    width: 800px;
+    display: none;
+}
+
+.p1 {
+    margin: 15px 0;
+    padding: 0;
+    width: 380px;
+    float: left;
+}
+
+.p2 {
+    margin: 15px 0 35px;
+    padding: 0;
+    width: 380px;
+    float: right;
+}
 
 /* ------------- HOME -------------- */
 
@@ -480,24 +507,49 @@ nav li a:active {
 .introJulIZoo {
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 380px;
 }
 
 
 .arrowBack {grid-area: arrowBack;}
 .introJulIZoo {grid-area: introJulIZoo;}
 .tabs {grid-area: tabs;}
+.tab1 {grid-area: openTab;}
+.tab2 {grid-area: openTab;}
+.tab3 {grid-area: openTab;}
 
 
 .julIZooGrid {
     padding: 80px 0;
+    min-height: 70vh;
     display: grid;
-    grid-template-columns:1fr 700px 1fr;
-    grid-template-rows: 260px 300px;
+    grid-template-columns:1fr 800px 1fr;
+    grid-template-rows: 280px 110px 1fr;
     grid-template-areas: 
     "arrowBack introJulIZoo ."
-    ". tabs .";
+    ". tabs ."
+    ". openTab .";
 }
+
+.imgTab1JulIZoo {
+    width: 100%;
+}
+
+
+.imgTab2JulIZoo {
+    width: 100%;
+}
+
+.prototype1JulIZoo {
+    width: 48%;
+    float: left;
+}
+
+.prototype2JulIZoo {
+    width: 48%;
+    float: right;
+}
+
 
 
 /* ------------- SVALEGAARDEN MEST -------------- */
@@ -506,55 +558,82 @@ nav li a:active {
 .introSM {
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 380px;
 }
-
 
 .arrowBack {grid-area: arrowBack;}
 .introSM {grid-area: introSM;}
 .tabs {grid-area: tabs;}
+.tab1 {grid-area: openTab;}
+.tab2 {grid-area: openTab;}
+.tab3 {grid-area: openTab;}
 
 
 .SMGrid {
     padding: 80px 0;
+    min-height: 70vh;
     display: grid;
-    grid-template-columns:1fr 700px 1fr;
-    grid-template-rows: 280px 300px;
+    grid-template-columns:1fr 800px 1fr;
+    grid-template-rows: 280px 100px 1fr;
     grid-template-areas: 
     "arrowBack introSM ."
-    ". tabs .";
+    ". tabs ."
+    ". openTab .";
 }
+
+.SMTab1Img {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.SMTab2Img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+
 
 /* ------------- ENGLEROD -------------- */
 
 .introEnglerod {
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 380px;
 }
 
 
 .arrowBack {grid-area: arrowBack;}
 .introEnglerod {grid-area: introEnglerod;}
 .tabs {grid-area: tabs;}
+.tab1 {grid-area: openTab;}
+.tab2 {grid-area: openTab;}
+.tab3 {grid-area: openTab;}
 
 
 .englerodGrid {
     padding: 80px 0;
+    min-height: 70vh;
     display: grid;
-    grid-template-columns:1fr 700px 1fr;
-    grid-template-rows: 350px 300px;
+    grid-template-columns:1fr 800px 1fr;
+    grid-template-rows: 350px 100px 1fr;
     grid-template-areas: 
     "arrowBack introEnglerod ."
-    ". tabs .";
+    ". tabs ."
+    ". openTab .";
 }
+
+.englerodImgtab2 {
+    width: 50%;
+    float: right;
+}
+
 
 /* ------------- NORDSJAELLANDS KATTEHJAELP -------------- */
 
 .introNK {
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 380px;
 }
 
 
@@ -565,9 +644,10 @@ nav li a:active {
 
 .NKGrid {
     padding: 80px 0;
+    min-height: 70vh;
     display: grid;
-    grid-template-columns:1fr 700px 1fr;
-    grid-template-rows: 450px 300px;
+    grid-template-columns:1fr 800px 1fr;
+    grid-template-rows: 450px 100px;
     grid-template-areas: 
     "arrowBack NKGrid ."
     ". tabs .";
