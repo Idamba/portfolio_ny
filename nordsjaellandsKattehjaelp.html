@@ -75,16 +75,16 @@
         </div>
     
         <div class="tabs">
-            <p class="bebasNeue tabHover">
+            <button class="bebasNeue tabHover tab" onclick="openTab(event, 'userAnalysisNK')">
                 User analysis
-            </p>
+            </button>
     
-            <p class="bebasNeue tabHover">
+            <button class="bebasNeue tabHover tab" onclick="openTab(event, 'scrumNK')">
                 Scrum
-            </p>
+            </button>
         </div>
 
-        <div class="tab1">
+        <div class="tab1 content" id="userAnalysisNK">
             <h2 class="redHeader">
                User analysis 
             </h2>
@@ -118,7 +118,7 @@
             </p>
         </div>
 
-        <div class="tab2">
+        <div class="tab2 content" id="scrumNK">
             <h2 class="redHeader">
                 Scrum
             </h2>
@@ -154,5 +154,20 @@
             <a target="_blank" href="https://www.linkedin.com/in/idamba-andersen/"> <img src="./assets/img/linkedin.png" alt="LinkedIn" class="social link"></a>
             <a target="_blank" href="https://github.com/Idamba"> <img src="./assets/img/github.png" alt="Github" class="social link"></a>
         </footer>
+
+        <script>
+            function openTab(evt, tabType) {
+            let content = document.getElementsByClassName("content");
+
+            for (let i = 0 ; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+
+            let tab = document.getElementById(tabType);
+
+            tab.style.display = "block";
+        }
+        </script>
+
     </body>
 </html>

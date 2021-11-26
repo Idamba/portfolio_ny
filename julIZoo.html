@@ -5,7 +5,7 @@
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <title>Ida-Marie Andersen</title>
         <link rel="stylesheet" href="assets/styles.css">
-        <link rel="script" src="assets/script.js">
+        <link rel="script" src="assets/script.js" defer>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -77,7 +77,7 @@
         </button>
     </div>
 
-    <div class="tab1 content projectManagementJulIZoo">
+    <div class="tab1 content projectManagementJulIZoo" id="projectManagementJulIZoo">
         <h2 class="redHeader">
             Project management
         </h2>
@@ -103,7 +103,7 @@
         <img src="./assets/img/wbs.jpg" alt="WBS excel sheet" class="imgTab1JulIZoo">
     </div>
 
-    <div class="tab2 content informationArchitectureJulIZoo">
+    <div class="tab2 content" id="informationArchitectureJulIZoo">
         <h2 class="redHeader">
             Information architecture
         </h2>
@@ -133,7 +133,7 @@
         <img src="./assets/img/content_inventory.jpg" alt="content inventory Jul i Zoo" class="imgTab2JulIZoo">
     </div>
 
-    <div class="tab3 content prototypingJulIZoo">
+    <div class="tab3 content" id="prototypingJulIZoo">
         <h2 class="redHeader">
             Prototyping
         </h2>
@@ -187,5 +187,19 @@
             <a target="_blank" href="https://www.linkedin.com/in/idamba-andersen/"> <img src="./assets/img/linkedin.png" alt="LinkedIn" class="social link"></a>
             <a target="_blank" href="https://github.com/Idamba"> <img src="./assets/img/github.png" alt="Github" class="social link"></a>
         </footer>
+
+        <script>
+            function openTab(evt, tabType) {
+            let content = document.getElementsByClassName("content");
+
+            for (let i = 0 ; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+
+            let tab = document.getElementById(tabType);
+
+            tab.style.display = "block";
+        }
+        </script>
     </body>
 </html>

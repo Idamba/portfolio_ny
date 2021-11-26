@@ -66,20 +66,20 @@
         </div>
     
         <div class="tabs">
-            <p class="bebasNeue tabHover">
+            <button class="bebasNeue tabHover tab" onclick="openTab(event, 'projectManagementSM')">
                 Project management
-            </p>
+            </button>
     
-            <p class="bebasNeue tabHover">
+            <button class="bebasNeue tabHover tab" onclick="openTab(event, 'informationArchitectureSM')">
                 Information architecture
-            </p>
+            </button>
     
-            <p class="bebasNeue tabHover">
-                User analysis
-            </p>
+            <button class="bebasNeue tabHover tab" onclick="openTab(event, 'prototypingSM')">
+                Prototyping
+            </button>
         </div>
 
-        <div class="tab1">
+        <div class="tab1 content" id="projectManagementSM">
             <h2 class="redHeader">
                 Project management
             </h2>
@@ -98,7 +98,7 @@
         </div>
     
 
-        <div class="tab2">
+        <div class="tab2 content" id="informationArchitectureSM">
             <h2 class="redHeader">
                 Information architecture
             </h2>
@@ -120,7 +120,7 @@
             <img src="./assets/img/content_inventory_SM.jpg" alt="content inventory Svalegaarden Mest" class="SMTab2Img">
         </div>
 
-        <div class="tab3">
+        <div class="tab3 content" id="prototypingSM">
             <h2 class="redHeader">
                 User analysis
             </h2>
@@ -163,5 +163,19 @@
             <a target="_blank" href="https://www.linkedin.com/in/idamba-andersen/"> <img src="./assets/img/linkedin.png" alt="LinkedIn" class="social link"></a>
             <a target="_blank" href="https://github.com/Idamba"> <img src="./assets/img/github.png" alt="Github" class="social link"></a>
         </footer>
+
+        <script>
+            function openTab(evt, tabType) {
+            let content = document.getElementsByClassName("content");
+
+            for (let i = 0 ; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+
+            let tab = document.getElementById(tabType);
+
+            tab.style.display = "block";
+        }
+        </script>
     </body>
 </html>

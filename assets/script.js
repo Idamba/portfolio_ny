@@ -1,13 +1,15 @@
-function openTab (evt, tabType) {
-    var i, content, tab;
-    content = document.getElementsByClassName("content");
-    for (i = 0 < content.length; i++) {
-        content[i].style.display ="none";
+function openTab(evt, tabType) {
+    let content = document.getElementsByClassName("content");
+        for (let i = 0 ; i < content.length; i++) {
+        content[i].style.display = "none";
     }
-    tab = document.getElementsByClassName("tab");
-    for (i = 0; i < tablink.length; i++) {
-        tab[i].className = tab[i].className.replace("active","");
-    }
-    document.getElementsByClassName(tabType).style.display = "block";
-    evt.currentTarget.className += "active";
+
+    let tab = document.getElementById(tabType);
+
+/*   for (let i = 0; i < tab.length; i++) {
+    tab[i].className = tab[i].className.replace("active","");
+}   */
+
+    tab.style.display = "block";
+/*     evt.currentTarget.className += "active";     */
 }

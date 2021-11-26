@@ -137,24 +137,20 @@ nav li a:active {
     width: 100%;
 }
 
-.tabActive {
-    color: var(--darkred);
+.tab button.active {
+    background-color: #282828;
+    border-radius: 5px;
+}
+
+.tabs button {
+    background-color: #181818;
+    color: var(--red);
+    border: none;
+    font-size: 18px;
 }
 
 .tabHover:hover {
     color: var(--darkred);
-}
-
-.tab1 {
-    width: 800px;
-}
-
-.tab2 {
-    width: 800px;
-}
-
-.tab3 {
-    width: 800px;
 }
 
 .p1 {
@@ -179,6 +175,18 @@ nav li a:active {
     cursor: pointer;
 }
 
+.tab1 {
+    width: 800px;
+    display: block;
+}
+
+.tab2 {
+    width: 800px;
+}
+
+.tab3 {
+    width: 800px;
+}
 /* ------------- HOME -------------- */
 
 .frontpageImg {
