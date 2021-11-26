@@ -5,6 +5,7 @@
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <title>Ida-Marie Andersen</title>
         <link rel="stylesheet" href="assets/styles.css">
+        <link rel="script" src="assets/script.js">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -63,20 +64,20 @@
     </div>
 
     <div class="tabs">
-        <p class="bebasNeue tabHover">
+        <button class="bebasNeue tabHover tab" onclick="openTab(event, 'projectManagementJulIZoo')">
             Project management
-        </p>
+        </button>
 
-        <p class="bebasNeue tabHover">
+        <button class="bebasNeue tabHover tab" onclick="openTab(event, 'informationArchitectureJulIZoo')">
             Information architecture
-        </p>
+        </button>
 
-        <p class="bebasNeue tabHover">
+        <button class="bebasNeue tabHover tab" onclick="openTab(event, 'prototypingJulIZoo')">
             Prototyping
-        </p>
+        </button>
     </div>
 
-    <div class="tab1">
+    <div class="tab1 content projectManagementJulIZoo">
         <h2 class="redHeader">
             Project management
         </h2>
@@ -102,7 +103,7 @@
         <img src="./assets/img/wbs.jpg" alt="WBS excel sheet" class="imgTab1JulIZoo">
     </div>
 
-    <div class="tab2">
+    <div class="tab2 content informationArchitectureJulIZoo">
         <h2 class="redHeader">
             Information architecture
         </h2>
@@ -132,7 +133,7 @@
         <img src="./assets/img/content_inventory.jpg" alt="content inventory Jul i Zoo" class="imgTab2JulIZoo">
     </div>
 
-    <div class="tab3">
+    <div class="tab3 content prototypingJulIZoo">
         <h2 class="redHeader">
             Prototyping
         </h2>

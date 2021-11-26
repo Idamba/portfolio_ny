@@ -151,12 +151,10 @@ nav li a:active {
 
 .tab2 {
     width: 800px;
-    display: none;
 }
 
 .tab3 {
     width: 800px;
-    display: none;
 }
 
 .p1 {
@@ -171,6 +169,14 @@ nav li a:active {
     padding: 0;
     width: 380px;
     float: right;
+}
+
+.content {
+    display: none;
+}
+
+.tab {
+    cursor: pointer;
 }
 
 /* ------------- HOME -------------- */
