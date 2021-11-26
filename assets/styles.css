@@ -146,7 +146,7 @@ nav li a:active {
     background-color: #181818;
     color: var(--red);
     border: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .tabHover:hover {
@@ -177,7 +177,6 @@ nav li a:active {
 
 .tab1 {
     width: 800px;
-    display: block;
 }
 
 .tab2 {
@@ -731,4 +730,83 @@ h5 {
 
 .social:hover {
     opacity: 40%;
+}
+
+
+/* ------------- Media queries -------------- */
+
+@media screen and (max-width: 1300px) {
+    body {
+        background-color: #181818;
+        background-image: none;
+    }
+
+    nav {
+        font-size: 22px;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: var(--white);
+        display: inline-block;
+        margin: 0 30px 0 70px;
+    }
+
+    /*------------ FRONTPAGE ------------*/
+
+    .frontpageImg {
+        width: 250px;
+    }
+
+    .headerHome {
+        font-size: 40px;
+    }
+
+    .containerIndex h1 {
+        font-size: 22px;
+    }
+
+    .containerIndex h3 {
+        font-size: 18px;
+    }
+
+    .containerIndex p {
+        font-size: 16px;
+        width: 220px;
+    }
+
+    .frontGrid {
+        margin: 150px 0 0 50px;
+        padding: 0;
+        display: grid;
+        position: relative;
+        min-height: 70vh;
+        grid-template-columns: 1fr 260px 350px 1fr;
+        grid-template-rows: 70px 1fr;
+        grid-template-areas: 
+        ". frontpageImg headerHome ."
+        ". frontpageImg containerIndex .";
+    }
+
+    /*------------ WHO AM I? ------------*/
+
+    
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: red;
+        background-image: none;
+    }
+
+
 }
