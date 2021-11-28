@@ -794,19 +794,701 @@ h5 {
 
     /*------------ WHO AM I? ------------*/
 
-    
+        .whoAmIGrid {
+        padding: 20px 0 100px 0;
+        display: grid;
+        grid-template-columns:28% 28% 40%;
+        grid-template-rows: 100px 400px 800px;
+        grid-template-areas: 
+        "whoAmIHeader whoAmIHeader ."
+        "aboutMeTxt aboutMeTxt me"
+        "aboutMeTxt aboutMeTxt me2"
+        ". sendEmail .";
+    }
 
+    .whoAmIHeader {
+        font-size: 40px;
+    }
+    
+    .aboutMeTxt {
+        width: 60%;
+        line-height: 150%;
+    }
+    
+    .aboutMeTxt p {
+        margin: 10px 0;
+    }
+    
+    .me {
+        width: 60%;
+    }
+    
+    .me2 {
+        width: 60%;
+    }
+    
+    .userAnalysis {
+        display: none;
+    }
+
+    
+    .projectManagement {
+        display: none;
+    }
+
+    
+    .UXUIDesign {
+        display: none;
+    }
+
+    .sendEmail a {
+        font-size: 16px;
+    }
+
+    .emailButton {
+        padding: 5px 10px;
+    }
+
+    /*------------ CASES ------------*/
+
+    .casesHeader {
+        margin: 0 0 0 120px;
+        font-size: 40px;
+    }
+    
+    .pCases {
+        margin-left: 120px;
+        width: 40%;
+        line-height: 150%;
+        font-size: 16px;
+    }
+    
+    .NKCase {
+        margin: 0 0 0 120px;
+        padding: 0;
+    }
+    
+    .NKCaseImg {
+        width: 60%;   
+    }
+    
+    .NKCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .NKCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .englerodCase {
+        margin: 0 120px 0 0; 
+        padding: 0;
+    }
+    
+    .englerodCaseImg {
+        width: 60%;   
+    }
+
+    .englerodCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .englerodCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .svalegaardenMestCase {
+        margin: 0 0 0 120px;    
+        padding: 0;
+    }
+    
+    .svalegaardenMestCaseImg {
+        width: 60%;   
+    }
+    
+    .svalegaardenMestCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .svalegaardenMestCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .julIZooCase {
+        margin: 0 120px 0 0;     
+        padding: 0;
+    }
+    
+    .julIZooCaseImg {
+        width: 60%;   
+    }
+    
+   
+    .julIZooCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .julIZooCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .casesGrid {
+        padding: 80px 0;
+        display: grid;
+        grid-template-columns:1fr 50% 50% 1fr;
+        grid-template-rows: 260px 220px 280px;
+        grid-template-areas: 
+        ". introCases introCases ."
+        ". NKCase englerodCase ."
+        ". svalegaardenMestCase julIZooCase .";
+    }
+
+    /*------------ INDIVIDUAL CASES ------------*/
+
+    .arrowBack {
+        margin: 0 0 0 20%;
+        width: 30px;
+    }
+    
+    .arrowBack img {
+        width: 25px;
+    }
+    
+    .arrowBack p {
+        display: none;
+    }
+    
+    .tabs {
+        width: 70%;
+    }
+    
+    .tabs button {
+        font-size: 18px;
+    }
+
+    .p1 {
+        width: 48%;
+    }
+    
+    .p2 {
+        width: 48%;
+    }
+
+    .tab1 {
+        width: 500px;
+    }
+    
+    .tab2 {
+        width: 500px;
+    }
+    
+    .tab3 {
+        width: 500px;
+    }
+
+    .introNK {
+        margin: 0;
+        padding: 0;
+        width: 380px;
+    }
+    
+    .arrowBack {grid-area: arrowBack;}
+    .NKGrid {grid-area: NKGrid;}
+    .tabs {grid-area: tabs;}
+    .tab1 {grid-area: openTab;}
+    .tab2 {grid-area: openTab;}
+    .tab3 {grid-area: openTab;}
+    .NK_images {grid-area: images;}
+    
+    
+    .NKGrid {
+        padding: 80px 0;
+        min-height: 70vh;
+        display: grid;
+        grid-template-columns:1fr 500px 1fr;
+        grid-template-rows: 450px 100px 400px 400px;
+        grid-template-areas: 
+        "arrowBack NKGrid ."
+        ". tabs ."
+        ". openTab ."
+        ". images .";
+    }
+    
+    .NK_before {
+        float: left;
+        width: 55%;
+    }
+    
+    .NK_images {
+        color: var(--red);
+    }
+    
+    .NK_img1 {
+        width: 46%;
+        float: left;
+        margin: 10px 0 50px 0;
+    }
+    
+    .NK_img2 {
+        width: 45%;
+        float: right;
+        margin: 10px 0 30px 0;
+    }
+    
+    .NK_img3 {
+        display: none;
+    }
+    
+    .NK_img4 {
+        display: none;
+    }
 
 
 }
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     body {
-        background-color: red;
+        background-color: #181818;
         background-image: none;
     }
+
+    nav {
+        font-size: 22px;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: var(--white);
+        display: inline-block;
+        margin: 0 30px 0 20px;
+    }
+
+    footer {
+        margin-left: 0;
+        height: 40px;
+    }
+    
+    h5 {
+        margin: 10px 0 0 10px;
+    }
+    
+    .social {
+        margin-right: 15px;
+        width: 30px;
+    }
+
+    /*------------ FRONTPAGE ------------*/
+
+    .frontpageImg {
+        margin-top: 5px;
+        width: 170px;
+    }
+
+    .headerHome {
+        font-size: 30px;
+    }
+
+    .containerIndex h1 {
+        font-size: 16px;
+    }
+
+    .containerIndex h3 {
+        font-size: 14px;
+    }
+
+    .containerIndex p {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .frontGrid {
+        margin: 150px 0 0 50px;
+        padding: 0;
+        display: grid;
+        position: relative;
+        min-height: 70vh;
+        grid-template-columns: 1fr 180px 250px 1fr;
+        grid-template-rows: 45px 1fr;
+        grid-template-areas: 
+        ". frontpageImg headerHome ."
+        ". frontpageImg containerIndex .";
+    }
+
+    /*------------ WHO AM I? ------------*/
+
+        .whoAmIGrid {
+        padding: 0 0 10px 0;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 80px 900px 450px 350px 350px 350px 140px;
+        grid-template-areas:
+        "whoAmIHeader"
+        "aboutMeTxt"
+        "me"
+        "userAnalysis"
+        "projectManagement"
+        "UXUIDesign"
+        "sendEmail";
+    }
+
+    .whoAmIHeader {
+        font-size: 50px;
+        margin: 60px;
+    }
+    
+    .aboutMeTxt {
+        width: 90%;
+        line-height: 150%;
+        margin: 60px;
+    }
+    
+    .aboutMeTxt p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    
+    .me {
+        width: 80%;
+        margin-left: 60px;
+    }
+    
+    .me2 {
+        display: none;
+    }
+    
+    .userAnalysis {
+        display: block;
+        margin-left: 120px;
+    }
+
+    .userAnalysis img {
+        width: 100px;
+    }
+
+    
+    .projectManagement {
+        display: block;
+        margin-left: 120px;
+    }
+
+    .projectManagement img {
+        width: 100px;
+    }
+
+    
+    .UXUIDesign {
+        display: block;
+        margin-left: 120px;
+    }
+
+    .UXUIDesign img {
+        width: 100px;
+    }
+
+    .sendEmail {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sendEmail p {
+        margin-left: 80px;
+        margin-bottom: 40px;
+    }
+
+    .emailButton {
+        margin-left: 160px;
+    }
+
+
+    /*------------ CASES ------------*/
+
+    .casesHeader {
+        margin-left: 0;
+        font-size: 50px;
+    }
+    
+    .pCases {
+        margin-left: 0;
+        width: 80%;
+        line-height: 150%;
+        font-size: 16px;
+    }
+    
+    .NKCase {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .NKCaseImg {
+        width: 60%;   
+    }
+    
+    .NKCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .NKCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .englerodCase {
+        margin: 0; 
+        padding: 0;
+    }
+    
+    .englerodCaseImg {
+        width: 60%;   
+    }
+
+    .englerodCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .englerodCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .svalegaardenMestCase {
+        margin: 0;    
+        padding: 0;
+    }
+    
+    .svalegaardenMestCaseImg {
+        width: 60%;   
+    }
+    
+    .svalegaardenMestCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .svalegaardenMestCase p {
+        margin: 5px 0;
+        width: 50%;
+        font-style: italic;
+    }
+    
+    .julIZooCase {
+        margin: 0;     
+        padding: 0;
+    }
+    
+    .julIZooCaseImg {
+        width: 60%;   
+    }
+   
+    .julIZooCase h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    
+    .casesGrid {
+        margin-left: 60px;
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns:1fr 50% 50% 1fr;
+        grid-template-rows: 230px 250px 250px 250px 250px;
+        grid-template-areas: 
+        "introCases"
+        "NKCase"
+        "englerodCase"
+        "svalegaardenMestCase"
+        "julIZooCase";
+    }
+
+    /*------------ INDIVIDUAL CASES ------------*/
+
+    .arrowBack {
+        margin: 0 0 0 20px;
+        width: 30px;
+    }
+    
+    .arrowBack img {
+        width: 40px;
+    }
+    
+    .arrowBack p {
+        display: block;
+        width: 50px;
+    }
+    
+    .tabs {
+        margin-left: 60px;
+        width: 38%;
+    }
+    
+    .tabs button {
+        font-size: 16px;
+    }
+
+    .p1 {
+        width: 90%;
+    }
+    
+    .p2 {
+        float: left;
+        width: 90%;
+    }
+
+    .tab1 {
+        margin-left: 60px;
+        width: 300px;
+    }
+    
+    .tab2 {
+        margin-left: 60px;
+        width: 300px;
+    }
+    
+    .tab3 {
+        margin-left: 60px;
+        width: 300px;
+    }
+
+    .introJulIZoo {
+        margin-left: 60px;
+        padding: 0;
+        width: 300px;
+    }
+
+    .introJulIZoo h1 {
+        margin: 0;
+    }
+    
+    
+    .arrowBack {grid-area: arrowBack;}
+    .introJulIZoo {grid-area: introJulIZoo;}
+    .tabs {grid-area: tabs;}
+    .tab1 {grid-area: openTab;}
+    .tab2 {grid-area: openTab;}
+    .tab3 {grid-area: openTab;}
+    
+    
+    .julIZooGrid {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns:1fr 800px 1fr;
+        grid-template-rows: 280px 110px 900px;
+        grid-template-areas: 
+        "arrowBack introJulIZoo ." 
+        ". tabs ."
+        ". openTab .";
+    }
+    
+    .introSM {
+        margin-left: 60px;
+        width: 300px;
+    }
+
+    .introSM h1 {
+        margin: 0;
+    }
+
+    .SMGrid {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns:1fr 800px 1fr;
+        grid-template-rows: 400px 100px 450px;
+        grid-template-areas: 
+        "arrowBack introSM ."
+        ". tabs ."
+        ". openTab .";
+    }
+
+    .introEnglerod {
+        margin-left: 60px;
+        width: 300px;
+    }
+
+    .introEnglerod h1 {
+        margin: 0;
+    }
+
+    .englerodGrid {
+        padding: 80px 0;
+        display: grid;
+        grid-template-columns:1fr 800px 1fr;
+        grid-template-rows: 430px 100px 1fr;
+        grid-template-areas: 
+        "arrowBack introEnglerod ."
+        ". tabs ."
+        ". openTab .";
+    }
+
+    .englerodImgtab2 {
+        width: 100%;
+        float: left;
+    }
+
+    .introNK {
+        margin-left: 60px;
+        padding: 0;
+        width: 300px;
+    }
+
+    .introNK h1 {
+        margin: 0;
+    }
+
+    .NKGrid {
+        padding: 80px 0;
+        display: grid;
+        grid-template-columns:1fr 800px 1fr;
+        grid-template-rows: 500px 100px 600px 1200px;
+        grid-template-areas: 
+        "arrowBack NKGrid ."
+        ". tabs ."
+        ". openTab ."
+        ". images .";
+    }
+    
+    .NK_img1 {
+        width: 55%;
+        float: left;
+        margin: 10px 0 50px 0;
+    }
+
+    .NK_img2 {
+        width: 55%;
+        float: left;
+        margin: 10px 0 30px 0;
+    }
+
+    .NK_before {
+        display: none;
+    }
+
+    .NK_After {
+        display: none;
+    }
+
+
+
 
 
 }
