@@ -49,6 +49,7 @@ nav ul li a {
 
 nav li a:hover {
     color: var(--darkred);
+    transition: 0.3s;
 }
 
 nav li a:active {
@@ -74,10 +75,12 @@ nav li a:active {
 
 .link:hover {
     color: var(--darkred);
+    transition: 0.5s;
 }
 
 .bebasNeue {
     font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
 }
 
 .redHeader {
@@ -117,6 +120,7 @@ nav li a:active {
 
 .arrowBack:hover {
     opacity: 50%;
+    transition: 0.5s;
 }
 
 .casesUse {
@@ -151,6 +155,7 @@ nav li a:active {
 
 .tabHover:hover {
     color: var(--darkred);
+    transition: 0.5s;
 }
 
 .p1 {
@@ -290,7 +295,7 @@ nav li a:active {
 .projectManagement img {
     margin: 0 0 0 45px;
     padding: 0;
-    width: 32%;
+    width: 28%;
 }
 
 .projectManagement h3 {
@@ -349,6 +354,7 @@ nav li a:active {
 
 .emailButton:hover {
     background-color: var(--darkred);
+    transition: 0.5s;
 }
 
 .whoAmIHeader {grid-area: whoAmIHeader;}
@@ -364,7 +370,7 @@ nav li a:active {
 .whoAmIGrid {
     padding: 20px 0 100px 0;
     display: grid;
-    grid-template-columns:1fr 300px 300px 300px 1fr;
+    grid-template-columns:1fr 25% 25% 25% 1fr;
     grid-template-rows: 80px 420px 420px 350px;
     grid-template-areas: 
     ". whoAmIHeader whoAmIHeader . ."
@@ -377,145 +383,93 @@ nav li a:active {
 
 /* ------------- CASES -------------- */
 
-.casesHeader {
-    margin: 0 0 0 120px;
+.introCases h1 {
+    margin: 0;
+    padding: 0;
 }
 
-.pCases {
-    margin-left: 120px;
-    width: 500px;
-    line-height: 150%;
-    font-size: 18px;
+.introCases p {
+    max-width: 400px;
 }
 
 .NKCase {
-    margin: 0 0 0 120px;
-    padding: 0;
-}
-
-.NKCaseImg {
-    width: 80%;    
-    border-radius: 5px;
-}
-
-.NKCaseImg:hover {
-    opacity: 50%;
-}
-
-.NKCase h2 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
-    font-weight: normal;
-    width: 90%;
 }
 
-.NKCase p {
-    margin: 5px 0;
-    width: 50%;
-    font-style: italic;
-}
-
-.englerodCase {
-    margin: 0 120px 0 0; 
-    padding: 0;
-}
-
-.englerodCaseImg {
-    width: 80%;    
+.caseBox {
+    margin: 0 0 30px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 2px var(--darkred) solid;
     border-radius: 5px;
+    color: var(--white);
+    text-decoration: none;
 }
 
-.englerodCaseImg:hover {
-    opacity: 50%;
-}
-
-.englerodCase h2 {
+.caseBox h2 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
-    font-weight: normal;
-    width: 50%;
+    font-size: 26px;
 }
 
-.englerodCase p {
-    margin: 5px 0;
-    width: 50%;
-    font-style: italic;
+.caseBox:hover {
+    background-color: #272727;
+    transition: 0.5s;
 }
 
-.svalegaardenMestCase {
-    margin: 0 0 0 120px;    
-    padding: 0;
-}
-
-.svalegaardenMestCaseImg {
-    width: 80%;    
-    border-radius: 5px;
-}
-
-.svalegaardenMestCaseImg:hover {
-    opacity: 50%;
-}
-
-.svalegaardenMestCase h2 {
+.caseTxtBox {
     margin: 0;
     padding: 0;
-    font-size: 30px;
-    font-weight: normal;
-    width: 50%;
+    max-width: 450px;
 }
 
-.svalegaardenMestCase p {
-    margin: 5px 0;
-    width: 50%;
-    font-style: italic;
-}
-
-.julIZooCase {
-    margin: 0 120px 0 0;     
+.casesTxt {
+    margin: 20px 20px 0 0;
     padding: 0;
+    max-width: 400px;
 }
 
-.julIZooCaseImg {
-    width: 80%;    
-    border-radius: 5px;
+.caseImgs {
+    margin: auto;
+    width: 250px;
+    height: 180px;
 }
 
-.julIZooCaseImg:hover {
-    opacity: 50%;
+.otherProjects p {
+    max-width: 400px;
 }
 
-.julIZooCase h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    font-weight: normal;
-    width: 50%;
+.photographyImg {
+    width: 25%;
+    margin: auto;
 }
 
-.julIZooCase p {
-    margin: 5px 0;
-    width: 50%;
-    font-style: italic;
-}
-
-.introCases {grid-area: introCases;}
+.introCases {grid-area: intro;}
 .NKCase {grid-area: NKCase;}
 .englerodCase {grid-area: englerodCase;}
 .svalegaardenMestCase {grid-area: svalegaardenMestCase;}
 .julIZooCase {grid-area: julIZooCase;}
+.otherProjects {grid-area: otherProjects;}
+.birthdayCard {grid-area: birthdayCard;}
+.photography {grid-area: photography;}
 
 
 .casesGrid {
     padding: 80px 0;
     display: grid;
-    grid-template-columns:1fr 550px 550px 1fr;
-    grid-template-rows: 260px 300px 280px;
+    grid-template-columns:1fr 60% 1fr;
+    grid-template-rows: 200px 1fr 1fr 1fr 1fr 200px 1fr 1fr;
     grid-template-areas: 
-    ". introCases introCases ."
-    ". NKCase englerodCase ."
-    ". svalegaardenMestCase julIZooCase .";
+    ". intro ."
+    ". NKCase ."
+    ". englerodCase ."
+    ". svalegaardenMestCase ."
+    ". julIZooCase ."
+    ". otherProjects ."
+    ". birthdayCard ."
+    ". photography .";
 }
 
 /* ------------- JUL I ZOO -------------- */
@@ -709,10 +663,11 @@ nav li a:active {
 
 footer {
     margin-left: 10px;
-    padding: 0;
+    padding: 5px;
     display: inline-block;
     width: 100%;
     height: 60px;
+    background-color: #181818;
 }
 
 h5 {
@@ -733,6 +688,72 @@ h5 {
 
 .social:hover {
     opacity: 40%;
+    transition: 0.5s;
+}
+
+/* ------------- Birthday card -------------- */
+
+    .introBirthday {
+        margin: 0;
+        padding: 0;
+        max-width: 400px;
+    }
+
+    .arrowBack {grid-area: arrowBack;}
+    .introBirthday {grid-area: introBirthday;}
+    .birthdayCardImg {grid-area: image;}
+    
+    .birthdayGrid {
+        padding: 80px 0;
+        min-height: 70vh;
+        display: grid;
+        grid-template-columns:1fr 50% 1fr;
+        grid-template-rows: 250px 1fr;
+        grid-template-areas: 
+        "arrowBack introBirthday ."
+        ". image .";
+    }
+
+    .birthdayCardImg {
+        width: 100%;
+    }
+
+
+/* ----------- Photography ---------------*/
+
+.photoIntro {
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+}
+
+.arrowBack {grid-area: arrowBack;}
+.photoIntro {grid-area: photoIntro;}
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img3 {grid-area: img3;}
+.img4 {grid-area: img4;}
+
+
+.photoGrid {
+    padding: 80px 0;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns:1fr 25% 25% 1fr;
+    grid-template-rows: 250px 1fr 1fr;
+    row-gap: 20px;
+    grid-template-areas: 
+    "arrowBack photoIntro photoIntro ."
+    ". img1 img2 ."
+    ". img3 img4 .";
+}
+
+.photo {
+    width: 90%;
+}
+
+.birthdayCardImg {
+    width: 100%;
 }
 
 
@@ -800,13 +821,13 @@ h5 {
         .whoAmIGrid {
         padding: 20px 0 100px 0;
         display: grid;
-        grid-template-columns:28% 28% 40%;
+        grid-template-columns: 1fr 45% 45% 45% 1fr;
         grid-template-rows: 100px 400px 800px;
         grid-template-areas: 
-        "whoAmIHeader whoAmIHeader ."
-        "aboutMeTxt aboutMeTxt me"
-        "aboutMeTxt aboutMeTxt me2"
-        ". sendEmail .";
+        ". whoAmIHeader whoAmIHeader . ."
+        ". aboutMeTxt aboutMeTxt me ."
+        ". aboutMeTxt aboutMeTxt me2 ."
+        ". . sendEmail . .";
     }
 
     .whoAmIHeader {
@@ -854,109 +875,7 @@ h5 {
 
     /*------------ CASES ------------*/
 
-    .casesHeader {
-        margin: 0 0 0 120px;
-        font-size: 40px;
-    }
     
-    .pCases {
-        margin-left: 120px;
-        width: 40%;
-        line-height: 150%;
-        font-size: 16px;
-    }
-    
-    .NKCase {
-        margin: 0 0 0 120px;
-        padding: 0;
-    }
-    
-    .NKCaseImg {
-        width: 60%;   
-    }
-    
-    .NKCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-    
-    .NKCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
-    }
-    
-    .englerodCase {
-        margin: 0 120px 0 0; 
-        padding: 0;
-    }
-    
-    .englerodCaseImg {
-        width: 60%;   
-    }
-
-    .englerodCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-    
-    .englerodCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
-    }
-    
-    .svalegaardenMestCase {
-        margin: 0 0 0 120px;    
-        padding: 0;
-    }
-    
-    .svalegaardenMestCaseImg {
-        width: 60%;   
-    }
-    
-    .svalegaardenMestCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-    
-    .svalegaardenMestCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
-    }
-    
-    .julIZooCase {
-        margin: 0 120px 0 0;     
-        padding: 0;
-    }
-    
-    .julIZooCaseImg {
-        width: 60%;   
-    }
-    
-   
-    .julIZooCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-    
-    .julIZooCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
-    }
-    
-    .casesGrid {
-        padding: 80px 0;
-        display: grid;
-        grid-template-columns:1fr 50% 50% 1fr;
-        grid-template-rows: 260px 220px 280px;
-        grid-template-areas: 
-        ". introCases introCases ."
-        ". NKCase englerodCase ."
-        ". svalegaardenMestCase julIZooCase .";
-    }
 
     /*------------ INDIVIDUAL CASES ------------*/
 
