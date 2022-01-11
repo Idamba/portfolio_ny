@@ -1034,8 +1034,9 @@ h5 {
     }
 
     .containerIndex h1 {
-        font-size: 30px;
+        font-size: 40px;
         color: var(--red);
+        font-family: 'Bebas Neue', cursive;
     }
 
     .containerIndex h3 {
@@ -1049,10 +1050,11 @@ h5 {
 
     .meFrontpage {
         width: 50%;
+        margin-left: 0;
     }
 
     .frontGrid {
-        margin: 50px 0 0 50px;
+        margin: 5% 10% 0 10%;
         padding: 0;
         display: grid;
         position: relative;
@@ -1152,7 +1154,8 @@ h5 {
         margin: 0;
         padding: 0;
     }
-      
+    
+    
     .caseBox {
         margin: 0 0 30px 0;
         padding: 20px;
@@ -1163,6 +1166,7 @@ h5 {
         color: var(--white);
         text-decoration: none;
     }
+
     
     .caseImgs {
         margin: auto;
@@ -1196,7 +1200,7 @@ h5 {
     /*------------ INDIVIDUAL CASES PHONE ------------*/
 
     .arrowBack {
-        margin: 0 0 0 20px;
+        margin: 0 0 0 10px;
         width: 30px;
     }
     
@@ -1264,7 +1268,7 @@ h5 {
     .julIZooGrid {
         padding: 20px 0;
         display: grid;
-        grid-template-columns:1fr 800px 1fr;
+        grid-template-columns: 20px 750px 1fr;
         grid-template-rows: 280px 110px 900px;
         grid-template-areas: 
         "arrowBack introJulIZoo ." 
@@ -1284,8 +1288,8 @@ h5 {
     .SMGrid {
         padding: 20px 0;
         display: grid;
-        grid-template-columns:1fr 800px 1fr;
-        grid-template-rows: 400px 100px 450px;
+        grid-template-columns: 20px 750px 1fr;
+        grid-template-rows: 400px 110px 1fr;
         grid-template-areas: 
         "arrowBack introSM ."
         ". tabs ."
@@ -1304,8 +1308,8 @@ h5 {
     .englerodGrid {
         padding: 80px 0;
         display: grid;
-        grid-template-columns:1fr 800px 1fr;
-        grid-template-rows: 430px 100px 1fr;
+        grid-template-columns: 20px 750px 1fr;
+        grid-template-rows: 420px 110px 1fr;
         grid-template-areas: 
         "arrowBack introEnglerod ."
         ". tabs ."
@@ -1330,8 +1334,8 @@ h5 {
     .NKGrid {
         padding: 80px 0;
         display: grid;
-        grid-template-columns:1fr 800px 1fr;
-        grid-template-rows: 500px 100px 600px 1200px;
+        grid-template-columns: 20px 750px 1fr;
+        grid-template-rows: 500px 110px 1fr;
         grid-template-areas: 
         "arrowBack NKGrid ."
         ". tabs ."
@@ -1358,9 +1362,4 @@ h5 {
     .NK_After {
         display: none;
     }
-
-
-
-
-
 }
