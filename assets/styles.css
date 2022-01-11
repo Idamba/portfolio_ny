@@ -983,24 +983,25 @@ h5 {
 
 
 @media screen and (max-width: 650px) {
+    
     body {
         background-color: #181818;
         background-image: none;
     }
 
     nav {
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .logo {
-        width: 50px;
+        width: 40px;
     }
     
     nav ul li a {
         text-decoration: none;
         color: var(--white);
         display: inline-block;
-        margin: 0 30px 0 20px;
+        margin: 10px 10px 0 20px;
     }
 
     footer {
@@ -1011,29 +1012,34 @@ h5 {
     h5 {
         margin: 10px 0 0 10px;
     }
+
+    footer h5 {
+        display: none;
+    }
+
     
     .social {
         margin-right: 15px;
         width: 30px;
     }
 
-    /*------------ FRONTPAGE ------------*/
+    /*------------ FRONTPAGE PHONE ------------*/
 
     .frontpageImg {
-        margin-top: 5px;
-        width: 170px;
+        display: none;
     }
 
     .headerHome {
-        font-size: 30px;
+        display: none;
     }
 
     .containerIndex h1 {
-        font-size: 16px;
+        font-size: 30px;
+        color: var(--red);
     }
 
     .containerIndex h3 {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .containerIndex p {
@@ -1041,26 +1047,30 @@ h5 {
         width: 200px;
     }
 
+    .meFrontpage {
+        width: 50%;
+    }
+
     .frontGrid {
-        margin: 150px 0 0 50px;
+        margin: 50px 0 0 50px;
         padding: 0;
         display: grid;
         position: relative;
         min-height: 70vh;
-        grid-template-columns: 1fr 180px 250px 1fr;
-        grid-template-rows: 45px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
         grid-template-areas: 
-        ". frontpageImg headerHome ."
-        ". frontpageImg containerIndex .";
+        "containerIndex"
+        "meFrontpage";
     }
 
-    /*------------ WHO AM I? ------------*/
+    /*------------ WHO AM I? PHONE ------------*/
 
         .whoAmIGrid {
         padding: 0 0 10px 0;
         display: grid;
         grid-template-columns: 80%;
-        grid-template-rows: 80px 900px 450px 350px 350px 350px 140px;
+        grid-template-rows: 80px 1100px 450px 350px 350px 350px 140px;
         grid-template-areas:
         "whoAmIHeader"
         "aboutMeTxt"
@@ -1090,10 +1100,6 @@ h5 {
     .me {
         width: 80%;
         margin-left: 60px;
-    }
-    
-    .me2 {
-        display: none;
     }
     
     .userAnalysis {
@@ -1140,110 +1146,54 @@ h5 {
     }
 
 
-    /*------------ CASES ------------*/
+    /*------------ CASES PHONE ------------*/
 
-    .casesHeader {
-        margin-left: 0;
-        font-size: 50px;
-    }
-    
-    .pCases {
-        margin-left: 0;
-        width: 80%;
-        line-height: 150%;
-        font-size: 16px;
-    }
-    
-    .NKCase {
+    .introCases h1 {
         margin: 0;
         padding: 0;
     }
-    
-    .NKCaseImg {
-        width: 60%;   
+      
+    .caseBox {
+        margin: 0 0 30px 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 2px var(--darkred) solid;
+        border-radius: 5px;
+        color: var(--white);
+        text-decoration: none;
     }
     
-    .NKCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-    
-    .NKCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
-    }
-    
-    .englerodCase {
-        margin: 0; 
-        padding: 0;
-    }
-    
-    .englerodCaseImg {
-        width: 60%;   
+    .caseImgs {
+        margin: auto;
+        width: 200px;
+        height: 150px;
     }
 
-    .englerodCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
     
-    .englerodCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
+    .photographyImg {
+        width: 60%;
+        margin: auto;
     }
-    
-    .svalegaardenMestCase {
-        margin: 0;    
-        padding: 0;
-    }
-    
-    .svalegaardenMestCaseImg {
-        width: 60%;   
-    }
-    
-    .svalegaardenMestCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-    
-    .svalegaardenMestCase p {
-        margin: 5px 0;
-        width: 50%;
-        font-style: italic;
-    }
-    
-    .julIZooCase {
-        margin: 0;     
-        padding: 0;
-    }
-    
-    .julIZooCaseImg {
-        width: 60%;   
-    }
-   
-    .julIZooCase h2 {
-        font-size: 20px;
-        width: 90%;
-    }
-
     
     .casesGrid {
-        margin-left: 60px;
-        padding: 60px 0;
+        margin-left: 10%;
+        padding: 80px 0;
         display: grid;
-        grid-template-columns:1fr 50% 50% 1fr;
-        grid-template-rows: 230px 250px 250px 250px 250px;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 1fr 1fr 1fr 1fr 200px 1fr 1fr;
         grid-template-areas: 
-        "introCases"
+        "intro"
         "NKCase"
         "englerodCase"
         "svalegaardenMestCase"
-        "julIZooCase";
+        "julIZooCase"
+        "otherProjects"
+        "birthdayCard"
+        "photography";
     }
 
-    /*------------ INDIVIDUAL CASES ------------*/
+    /*------------ INDIVIDUAL CASES PHONE ------------*/
 
     .arrowBack {
         margin: 0 0 0 20px;
